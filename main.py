@@ -17,8 +17,17 @@
 # with open("my_file.txt", mode="a") as file: #mode set to WRITE
 #     file.write("\nThis is some randon text") #all text in my file got replaced by "This is some randon text"
 
-# # CREATE NEW FILE: if the name specified does not have a file in that name, it will CREATE one!
+# CREATE NEW FILE: if the name specified does not have a file in that name, it will CREATE one!
 # with open("new_file.txt", mode="w") as file: #mode set to WRITE
 #     file.write("\nThis is some randon text") #all text in my file got replaced by "This is some randon text"
 
+# #Opening a file using file path
+# with open("C:/Users/fatem/OneDrive/Desktop/my_file.txt") as file:
+#     contents = file.read()
+#     print(contents)
+#
+#Opening a file using file path
+with open("C:/Users/fatem/OneDrive/Desktop/my_file.txt") as file:
+    contents = file.read()
+    print(contents)
 
