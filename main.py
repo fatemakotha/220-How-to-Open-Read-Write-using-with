@@ -1,16 +1,24 @@
-# This is a sample Python script.
 
-# Press Shift+F10 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
+# # We do not have to close this file as we used the "with" statement:
+# with open("my_file.txt") as file:
+#     contents = file.read()
+#     print(contents)
+#
+# #Open file without needing to close:
+# # We do not have to close this file as we used the "with" statement:
+# with open("my_file.txt", mode="r") as file: #By default the mode is set to READ ONLY, you CANNOT WRITE
+#     file.write("This is some randon text")
+#
+# # WRITE: replaces all prev text
+# with open("my_file.txt", mode="w") as file: #mode set to WRITE
+#     file.write("This is some randon text") #all text in my file got replaced by "This is some randon text"
+#
+# # ADD: adds to the prev set that was in the file
+# with open("my_file.txt", mode="a") as file: #mode set to WRITE
+#     file.write("\nThis is some randon text") #all text in my file got replaced by "This is some randon text"
+
+# # CREATE NEW FILE: if the name specified does not have a file in that name, it will CREATE one!
+# with open("new_file.txt", mode="w") as file: #mode set to WRITE
+#     file.write("\nThis is some randon text") #all text in my file got replaced by "This is some randon text"
 
 
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
-
-
-# Press the green button in the gutter to run the script.
-if __name__ == '__main__':
-    print_hi('PyCharm')
-
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
